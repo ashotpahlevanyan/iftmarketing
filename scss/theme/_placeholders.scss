@@ -1,0 +1,460 @@
+/* placeholders for changable elements 
+=====================================*/
+
+$colorBody: #fff;   //white
+$colorWhite: #fff;
+$colorBlack: #000;
+
+$colorNavItem: #4d4d4d; //77, 77, 77  grey
+$colorLinks: #4F7ADB; //79, 122, 219  navbar item active blue
+$colorLinksActive: #3D5DA8; //61 93 168 color Active
+$colorLogoText: #1A1A1A; // 26, 26, 26 logo text color  grey
+$colorFeaturesText: #767676; //118,118,119
+$colorFeatureText: #fff; // opacity: 0.7 
+$colorSignText: #486CC4; //72,108,196
+
+$colorSignInUpStart: #628BE0; // 98, 139, 224  blue
+$colorSignInUpEnd: #4068D2;  // 64,104,210		blue
+
+$colorHorLineBorder: #AAAAA6; //170,170,166		grey
+$colorSignUpGetText: #21335C; // 33,51,92		dark grey
+$colorContentBg: rgba(172, 194, 93, 0.985);//#97B743; // 151, 183, 67 green
+$colorContentBgRGB: rgb(172, 194, 93);
+//172, 194, 93, 0.94
+$colorNavbarItemBgHover: #D8DEE4; // 216, 222, 228
+
+$colorNavbarCollapseBorder: #777;
+
+$colorTextFooterFeatures: #F1F1F1; //241,241,241
+$colorSocialsFeatures: #A6A6A6; //166,166,166
+
+$colorPricingItemBorder: #E6E6E6; // 230,230,230
+$colorPricingPeriod: #808080; // 128,128,128
+$colorPricingDays: #B2B2B2; // 178,178,178
+$colorPricingHeadingBg: #9ABB42;//154 187 66
+$colorPrivacyLastUpdated: #CCCCCC; //204,204,204
+$colorNavbarBorder: #E6E6E6;  //230,230,230
+
+$colorTrialSign: #21335C; //33,51,92
+
+$colorTwitter: rgb(0, 172, 237);
+$colorFacebook: rgb(59, 89, 152);
+
+
+%fontColor1 {
+	/* color for  Logo text*/
+	color: $colorLogoText;
+}
+%fontColor2 {
+	/* color for  Logo text*/
+	color: $colorNavItem;
+}
+%fontColor3 {
+	/* color for  Links*/
+	color: $colorLinks;
+}
+
+%fontColor4 {
+	/* color for  Links*/
+	color: $colorWhite;
+}
+
+%fontColor5 {
+	/* color for  Feature text*/
+	color: $colorWhite; // opacity 0.7
+	color: rgba(255, 255, 255, 0.7);
+}
+%fontColor6 {
+	/* color for  footer text*/
+	color: $colorWhite;
+	color: rgba(255, 255, 255, 0.5); // opacity 0.5
+}
+
+%fontColor7 {
+	/* color for  footer text*/
+	color: $colorSignText;
+}
+
+%fontColor8 {
+	/* color for  featires button hover*/
+	color: $colorContentBgRGB;
+	color: $colorContentBg;
+}
+
+%fontColor9 {
+	/* color for  featires button hover*/
+	color: $colorFeaturesText;
+}
+%fontColor10 {
+	/* color for  featires button hover*/
+	color: $colorTextFooterFeatures;
+}
+
+%fontColor11 {
+	/* color for  featires button hover*/
+	color: $colorSocialsFeatures;
+}
+
+%fontColor12 {
+	/* color for pricings period*/
+	color: $colorPricingPeriod;
+}
+
+%fontColor13 {
+	/* color for pricings days*/
+	color: $colorPricingDays;
+}
+
+
+%fontColor14 {
+	/* color for privacy last updated*/
+	color: $colorPrivacyLastUpdated;
+}
+
+%fontColor15 {
+	/* color for trial sign in text*/
+	color: $colorTrialSign;
+}
+
+%bgColor1 {
+	/* background-color for content background*/
+	background-color: $colorNavbarItemBgHover;
+}
+
+%bgColor2 {
+	/* background-color for content background*/
+	background-color: $colorContentBgRGB;
+	background-color: $colorContentBg;
+}
+
+%bgColor3 {
+	/* background-color for content background*/
+	background-color: $colorLinks;
+}
+
+%bgColor4 {
+	/* background-color for content background*/
+	background-color: $colorWhite;
+}
+
+%bgColor5 {
+	/* background-color for content background*/
+	//background-color: $colorWhite;
+	background-color: rgba(255,255,255,0.3);
+}
+%bgColor6 {
+	/* background-color for content background*/
+	background-color: $colorWhite;
+	background-color: rgba(255,255,255,0.7);
+}
+
+%bgColor7 {
+	/* background-color for content background*/
+	background-color: $colorWhite;
+	background-color: rgba(255,255,255,0.8);
+}
+
+%bgColor8 {
+	/* background-color for content background*/
+	background-color: $colorWhite;
+	background-color: rgba(255,255,255,0.9);
+}
+
+%bgColor9 {
+	/* background-color for content background*/
+	background-color: rgb(79,122,219);
+	background-color: rgba(79,122,219,0.2);
+}
+
+%bgColor10 {
+	/* background-color for content background*/
+	background-color: $colorPricingHeadingBg;
+}
+
+
+%borderColor1 {
+	/* border-color for  horizontal line border*/
+	border-color: $colorHorLineBorder;
+}
+
+%borderColor2 {
+	/* border-color for  pricing items*/
+	border-color: $colorPricingItemBorder;
+}
+
+
+%fontSize17h24 {
+	/*Font size and line height for repeating elements */
+	font-size: 17px;
+	line-height: 24px;
+	font-size: 1.7rem;
+}
+
+%fontSize59h72 {
+	/*Font size and line height for repeating elements */
+	font-size: 59px;
+	line-height: 72px;
+	font-size: 5.9rem;
+	font-weight: 300;
+}
+
+%transitionOpacity1 {
+	-moz-transition: opacity ease-in-out 2s;
+	-o-transition: opacity ease-in-out 2s;
+	-webkit-transition: opacity ease-in-out 2s;
+	transition: opacity ease-in-out 2s;
+}
+
+%transitionOpacity2 {
+	-moz-transition: opacity ease-in-out 0.6s;
+	-o-transition: opacity ease-in-out 0.6s;
+	-webkit-transition: opacity ease-in-out 0.6s;
+	transition: opacity ease-in-out 0.6s;
+}
+%transitionOpacity3 {
+	-moz-transition: opacity ease-in-out 4s;
+	-o-transition: opacity ease-in-out 4s;
+	-webkit-transition: opacity ease-in-out 4s;
+	transition: opacity ease-in-out 4s;
+}
+
+
+/* placeholders for repeat elements 
+=====================================*/
+
+%fontAwesome {
+	font-family: 'Awesome_font';
+}
+
+%fontHelveticaArialLucida {
+	font-family: helvetica,arial,"lucida grande",verdana,"メイリオ","ＭＳ Ｐゴシック",sans-serif;;
+}
+
+
+%fontOpenSans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+%fontStrong {
+	/* font weight for any text */
+	font-weight: bold;
+}
+
+%fontNormal {
+	/* font weight for any text */
+	font-weight: normal;
+}
+
+%textTransformUpper {
+	/* text transform for any text*/
+	text-transform: uppercase;
+}
+
+%textTransformLower {
+	/* text transform for any text*/
+	text-transform: lowercase;
+}
+
+%overflowScroll {
+	/* overflow scroll for any box */
+	overflow: scroll;
+}
+%overflowScrollY {
+	/* overflow scroll for any box */
+	overflow-y: scroll;
+}
+%overflowScrollX {
+	/* overflow scroll for any box */
+	overflow-x: scroll;
+}
+
+%overflowHidden {
+	/* overflow hidden for any box */
+	overflow: hidden;
+}
+
+%textDecorNone {
+	/* text decoration for any text */
+	text-decoration: none;
+}
+	
+%textDecorUnderline {
+	/* text decoration for any text */
+	text-decoration: underline;
+}
+
+%textAlignLeft {
+	/* text decoration for any text */
+	text-align: left;
+}
+
+%textAlignRight {
+	/* text decoration for any text */
+	text-align: right;
+}
+
+%listStyleNone {
+	/* list style for any list */
+	list-style: none;
+}
+
+%floatLeft {
+	/* float for any block */
+	float: left;
+}
+
+%floatRight {
+	/* float for any block */
+	float: right;
+}
+
+%borderStyleSolid {
+	/* border style for any element */
+	border-style: solid;
+}
+
+%borderNone {
+	/* border for any element */
+	border: none;
+}
+
+%borderInset {
+	/* border for any element */
+	border: inset;
+}
+
+%borderOutset {
+	/* border for any element */
+	border: outset;
+}
+
+%borderSolid {
+	/* border for any element */
+	border: solid;
+}
+
+%borderDashed {
+	/* border for any element */
+	border: dashed;
+}
+
+%borderDotted {
+	/* border for any element */
+	border: dotted;
+}
+
+%positionAbsolute {
+	/* position for any element */
+	position: absolute;
+}
+
+%positionRelative {
+	/* position for any element */
+	position: relative;
+}
+
+%positionCenter {
+ 	/* position center for any element*/
+	margin: 0 auto;
+}
+
+%boxSizingBorderBox {
+ /* box sizing for all element in pages */
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+%bgPosNoRepeat {
+	background-position: center center;
+	background-repeat: no-repeat no-repeat;
+}
+
+%bgColorTransparent {
+	/* background color transparent*/
+	background-color: transparent; 
+}
+
+%bgImageNone {
+	/* background image none*/
+	background-image:  none; 
+}
+
+%bgNone {
+	/* background image none*/
+	background:  none; 
+}
+
+%cursorPointer {
+	cursor: pointer;
+}
+
+%displayInlineBlock {
+	/*display style for any element*/
+	display: inline-block;
+}
+
+%displayBlock {
+	/*display style for any element*/
+	display: block;
+}
+
+%displayNone {
+	/*display style for any element*/
+	display: none;
+}
+
+%verticalAlignTop {
+	/* vertical align for any element*/
+	vertical-align: top;
+}
+%verticalAlignMiddle {
+	/* vertical align for any element*/
+	vertical-align: middle;
+}
+%verticalAlignSub {
+	/* vertical align for any element*/
+	vertical-align: sub;
+}
+%verticalAlignTop {
+	/* vertical align for any element*/
+	vertical-align: top;
+}
+%vertAlignTextTop {
+	/* vertical align for any element*/
+	vertical-align: text-top;
+}
+%vertAlignBaseline {
+	/* vertical align for any element*/
+	vertical-align: baseline;
+}
+
+%textAlignCenter {
+	/* text align for any element*/
+	text-align: center;
+}
+%textAlignLeft {
+	/* text align for any element*/
+	text-align: left;
+}
+%textAlignRight {
+	/* text align for any element*/
+	text-align: right
+}
+
+%visibilityHidden {
+	visibility: hidden;
+}
+
+%visibilityVisible {
+	visibility: visible;
+}
+
+%outlineNone {
+	/* outline for any element*/
+	outline: none;
+}
+
+%resizeNone {
+	resize: none;
+}

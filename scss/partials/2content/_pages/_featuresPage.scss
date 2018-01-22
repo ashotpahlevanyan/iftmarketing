@@ -1,0 +1,230 @@
+/*Style for features Page==============================
+=====================================================*/
+
+.featuresPage {
+	.hero {
+		@extend %textAlignCenter;
+		padding-top: 22px;
+		.heroWrapper {
+			display: inline-block;
+		}
+		.textPart {
+			display: inline-block;
+			@extend %verticalAlignTop;
+			width: 420px;
+			padding-top: 32px;
+			margin-bottom: 0;
+			h2, p {
+				@extend %textAlignLeft;
+				@extend %fontColor1;
+			}
+			h2 {
+				@extend %fontSize59h72;
+				text-shadow: none;
+			}
+			p {
+				margin-top: 48px;
+				font-size: 24px;
+				line-height: 36px;
+			}
+		}
+		.imagePart {
+			display: inline-block;
+			@extend %positionRelative;
+			left: 0;
+			width: 330px;
+			height: 456px;
+			overflow-y: hidden;
+			top: 5px;
+			margin-right: 30px;
+		}
+	}
+	.featuresWrapper {
+		@extend %bgColor7;
+		padding-top: 60px;
+	}
+	.tryWrapper {
+		@extend %bgColor4;
+		margin-bottom: 38px;
+	}
+
+	.features {
+		@extend %textAlignCenter;
+		padding-top: 0px;
+		.feature {
+			display: inline-block;
+			@extend %fontColor1; 
+			margin-bottom: 34px;
+			padding-top: 10px;
+			width: 33%;
+			img {
+				height: 64px;
+				width: auto;
+			}
+			h4 {
+				margin-top: 21px;
+			}
+			p {
+				@extend %fontColor2;
+				margin-top: 18px;
+			}
+		}
+	}
+}
+
+.giveTry {
+	@include border-radius(5px);
+	@extend %textAlignCenter;
+	margin-top: 13px;
+	padding: 55px 20px 72px !important;
+	background: url(../images/countryImage.jpg) -100px -215px no-repeat;
+	background-size: 1650px auto;
+	width: 100%;
+	height: 100%;
+	h2 {
+		@extend %fontColor1;
+		display: inline-block;
+	}
+	p {
+		display: block;
+		@extend %fontColor1;
+		margin: 31px auto 0;
+		font-size: 24px;
+		line-height: 36px;
+		width: 66%;
+	}
+	.trial {
+		display: inline-block;
+		margin-top: 45px;
+		width: 33%;
+		max-width: 330px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.giveTry {
+		width: 94% !important;
+		&.container {
+			padding: 55px 20px 72px !important;
+		}
+		.trial {
+			width: 38.999%;
+			min-width: 320px;
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.featuresPage {
+		.hero {
+			margin-top: 40px !important;
+			padding: 0 10px !important;
+			.textPart {
+				width: 61.2%;
+			}
+			.imagePart {
+				width: 37%;
+				margin-right: 1.8%;
+				max-width: 330px;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+		.features {
+			font-size: 0;
+			&.container {
+				padding: 0 !important;
+			}
+			.feature {
+				width: 40%;
+				margin-left: 5%;
+				margin-right: 5%;
+				h2 {
+					margin-top: 23px;
+				}
+				p {
+					margin-top: 13px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.featuresPage {
+		.hero {
+			margin: 0px !important;
+			padding: 8px 6% 24px !important;
+			.textPart {
+				float: none !important;
+				padding-top: 0;
+				width: 100%;
+				h2 {
+					display: inline-block;
+					font-size: 40px;
+					line-height: 48px;
+					font-weight: 500;
+				}
+				h2 + h2 {
+					margin-left: 10px;
+				}
+				p {
+					text-align: center;
+					font-size: 17px;
+					line-height: 24px;
+					margin-top: 16px;
+				}
+			}
+			.imagePart {
+				display: none;
+			}
+		}
+		.featuresWrapper {
+			padding-top: 32px;
+		}
+		.features {
+			.feature {
+				width: 66%;
+			}
+		}
+	}
+	.giveTry {
+		width: 100% !important;
+		background-position: -100px -100px;
+		&.container {
+			padding: 39px 0 48px !important;
+		}
+		h2 {
+			font-size: 40px;
+			line-height: 48px;
+			min-width: 290px;
+			width: 66%;
+		}
+		p {
+			font-size: 17px;
+			line-height: 24px;
+			width: 66%;
+			margin-top: 19px;
+		}
+		.trial {
+			max-width: none;
+			min-width: 290px;
+			width: 70%;
+			margin-top: 33px;
+		}
+	}
+}
+
+@media (max-width: 479px) {
+	.featuresPage {
+		.hero {
+			padding: 8px 0 24px !important;
+			.textPart {
+				h2 + h2 {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+/*Style for Coming Soon banner ====================
+==================================================*/
+
+
+.comingSoon {
+	display: inline-block;
+	@extend %fontColor4;
+	@extend %bgColor3;
+	@extend %fontStrong;
+	padding: 3px 5px;
+	@include border-radius(3px);
+	font-size: 16px;
+	line-height: 20px;
+	&:hover {
+		@extend %fontColor3;
+		@extend %bgColor4;
+	}
+}

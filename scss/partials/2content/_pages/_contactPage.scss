@@ -1,0 +1,233 @@
+/*Style for Contact page========================
+================================================*/
+
+.contactPage {
+	.content {
+		margin-top: 0 !important;
+	}
+	.hero {
+		text-align: center;
+		padding-top: 2px;
+		.heroWrapper {
+			display: inline-block;
+		}
+		.textPart {
+			float: none !important;
+			display: inline-block;
+			@extend %verticalAlignTop;
+			margin-top: 0;
+			margin-bottom: 0;
+			h2 {
+				@extend %textAlignCenter;
+				@extend %fontColor1;
+				@extend %fontSize59h72;
+				text-shadow: none;
+				line-height: 198px;
+			}
+		}
+	}
+	.featuresWrapper {
+		padding-top: 66px;
+		@extend %bgColor8;
+	}
+	.tryWrapper {
+		@extend %bgColor4;
+		margin-bottom: 43px;
+	}
+}
+
+.stayInTouch {
+	@extend %textAlignCenter;
+	margin: 44px auto 102px !important;
+	h4 {
+		@extend %textAlignCenter;
+		width: 100%;
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 500;
+		@extend %fontColor1; 
+	}
+	h5 {
+		@extend %textAlignCenter;
+		@extend %fontColor1;
+		width: 100%;
+		margin: 9px auto 24px;
+	}
+	a {
+		display: inline-block;
+		@extend %textAlignCenter;
+		@extend %fontSize17h24;
+		@extend %textDecorNone;
+		@include border-radius(5px);
+		padding: 12px 35px;
+		width: 280px;
+		font-weight: 600;
+		border: 2px solid $colorTwitter;
+		color: $colorTwitter;
+		&:hover, &:focus {
+			@extend %textDecorNone;
+			color: $colorWhite;
+		}
+		span {
+			@extend %fontAwesome;
+			margin-right: 10px;
+			font-size: 20px;
+		}
+
+		&.facebookLink {
+			border-color: $colorFacebook;
+			color: $colorFacebook;
+			&:hover, &:focus {
+				background-color: $colorFacebook;
+				color: $colorWhite;
+			}
+		}
+		&.twitterLink {
+			margin-right: 27px;
+			&:hover, &:focus {
+				background-color: $colorTwitter;
+			}
+		}
+	}
+}
+
+.contactForm {
+	display: none; // disabled for now, before safe backend
+	margin-top: 30px;
+}
+.contacts {
+	width: 40%;
+	@extend %textAlignLeft;
+	.contactUs {
+		display: none; // disabled for now, before safe backend
+		margin-bottom: 24px;
+		h4, p {
+			@extend %fontColor1;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	.form-group {
+		border: 1px solid $colorPricingDays;
+		@include border-radius(5px);
+		margin-bottom: 33px;
+	}
+	.form-control {
+		@include border-radius(0); 
+		@include box-shadow(0,0,0,#fff,1);
+		@extend %fontSize17h24;
+		border: none;
+		padding: 12px 20px;
+	}
+	input {
+		&.form-control {
+			border-bottom: 1px solid $colorPricingDays;
+		}
+		height: 48px;
+	}
+	#name {
+		@include border-radius(5px 5px 0 0);
+	}
+	
+	textarea {
+		height: 288px;
+		@extend %resizeNone;
+		&.form-control {
+			@include border-radius(0 0 5px 5px);
+		}
+	}
+}
+
+.signUp {
+	display: inline-block;
+	@extend %fontColor4;
+	@extend %fontSize17h24;
+	@include border-radius(5px);
+	@include linear-gradient($colorSignInUpStart, $colorSignInUpEnd, 1);
+	padding: 10px 28px 11px;
+	font-weight: 600;
+	border: 2px solid $colorSignInUpStart;
+	&:hover {
+		@include linear-gradient($colorSignInUpEnd, $colorSignInUpStart, 1);
+	}
+}
+
+.questions {
+	font-size: 0;
+	width: 50%;
+	li, .questItem {
+		display: block;
+		@extend %textAlignLeft;
+		@extend %fontColor1;
+		margin-bottom: 30px;
+		h4 {
+			margin-bottom: 9px;
+		}
+		p {
+			@extend %fontSize17h24;
+			font-weight: 500;
+		}
+	}
+}
+.mailto {
+	@extend %fontColor3;
+	@extend %textDecorNone;
+	@extend %fontSize17h24;
+	font-weight: 600;
+	&:hover {
+		@extend %textDecorUnderline;
+	}
+}
+
+@media (max-width: 700px) {
+	.contactPage {
+		.hero {
+			&.container {
+				margin-top: 0 !important;
+			}
+			.textPart {
+				h2 {
+					font-size: 40px;
+					line-height: 84px;
+					width: 94%;
+				}
+			}
+		}
+	}
+
+	.contacts, .questions {
+		float: none !important;
+		width: 80%;
+		display: inline-block;
+	}
+	.contacts {
+		margin-bottom: 20px;
+		.contactForm {
+			text-align: center;
+			.signUp {
+				width: 100%;
+			}
+		}
+
+	}
+	.stayInTouch {
+		margin: 10px auto 30px !important;
+		a {
+			display: block;
+			padding: 10px 10px;
+			margin-left: auto;
+			margin-right: auto;
+			&.twitterLink {
+				margin-right: auto;
+				margin-bottom: 24px;
+			}
+		}
+	}
+}
+
+@media (max-width: 479px) {
+	.contacts, .questions {
+		width: 90%;
+	}
+}

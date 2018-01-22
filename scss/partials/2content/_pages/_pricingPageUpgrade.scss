@@ -1,0 +1,59 @@
+/* Style for Pricing Page Upgrade=====================
+======================================================*/
+
+.pricingPage.upgrade {
+	.topBar {
+		@extend %textAlignCenter;
+	}
+	.logo {
+		display: inline-block;
+		position: relative;
+	}
+	.hero {
+		.textPart {
+			width: 100%;
+		}
+	}
+
+	.featuresWrapper {
+		margin-bottom: 0;
+	}
+	.deleteAccount {
+		@extend %textAlignCenter;
+		@extend %fontColor1;
+		margin-top: 150px;
+		padding: 0 15px;
+		h4 {
+			margin-bottom: 9px;
+		}
+		p {
+			@extend %fontSize17h24;
+		}
+		.delete {
+			display: inline-block;
+			width: 42px;
+			height: 44px;
+			padding: 8px;
+			margin-top: 24px;
+			@include border-radius(3px);
+			background: url(../images/deleteAccount.png) 10px 10px no-repeat $colorWhite;
+			&:hover {
+				@include border-radius(3px);
+				background: url(../images/deleteAccountHover.png) 10px 10px no-repeat $colorLinks;
+			}
+			&:active {
+				@include border-radius(3px);
+				background: url(../images/deleteAccountHover.png) 10px 10px no-repeat $colorLinksActive;
+			}
+
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.pricingPage.upgrade {
+		.deleteAccount {
+			margin-top: 40px;
+		}
+	}
+}

@@ -1,0 +1,218 @@
+/* Style for Hero===============================
+================================================*/
+
+.content {
+	margin-top: 47px !important;
+}
+.hero {
+	position: relative;
+	&.container {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.textPart {
+		margin-top: 15px;
+		width: 34%;
+		min-width: 320px;
+		margin-bottom: 43px;
+		h1, h2, h3 {
+			@include text-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.498), 1);
+			@extend %textAlignCenter;
+			font-weight: 500;
+		}
+		h1 {
+			line-height: 72px;
+		}
+		h2 {
+			font-size: 50px;
+			line-height: normal;
+		}
+		h3 {
+			font-size: 37px;
+			line-height: 60px;
+		}
+		
+		.equal {
+			font-size: 90px;
+			line-height: 80px;
+		}
+		.border {
+			@extend %bgColor4;
+			@include box-shadow(1px, 1px, 3px, #333, 1);
+			height: 4px;
+			border-bottom: 2px solid $colorHorLineBorder;
+			margin: 19px 0 7px;
+		}
+		.lowerCosts {
+			font-size: 50px;
+			line-height: normal;
+		}
+	}
+	.imagePart {
+		position: absolute;
+		top: 15px;
+		left: 42%;
+		//right: 0;
+		width: 58%;
+		.webImage {
+
+		}
+		.tabletImage {
+			display: none;
+		}
+		.mobileImage {
+			display: none;
+		}
+	}
+}
+
+.trial {
+	display: block;
+	@include border-radius(6px);
+	background: $colorSignInUpStart;
+	@include linear-gradient($colorSignInUpStart, $colorSignInUpEnd, 1);
+	@include box-shadow(0, 2px, 8px, rgba(0, 0, 0, 0.4),1);
+	@extend %fontColor4;
+	@extend %textDecorNone;
+	padding: 23px 10px 23px;
+	width: 100%;
+	margin-top: 27px;
+	// border: 2px solid $colorSignInUpStart;
+	&:hover {
+		@extend %textDecorNone;
+		@include linear-gradient($colorSignInUpEnd, $colorSignInUpStart, 1);
+	}
+	&:focus, &:visited {
+		@extend %textDecorNone;
+	}
+	span {
+		display: block;
+		@extend %textAlignCenter;
+	}
+	.getFreeTrial {
+		@extend %fontColor4;
+		font-size: 33px;
+		line-height: 1em;
+		font-weight: 700;
+	}
+	.sign {
+		@extend %fontColor15;
+		@include text-shadow(0, 1px, 0, rgba(255, 255, 255, 0.247),1);
+		font-size: 17px;
+		line-height: 1em;
+		margin-bottom: 6px;
+		font-weight: 600;
+	}
+}
+
+@media (max-width: 1049px) {
+	.hero {
+		&.container {
+			padding-left: 3.25% !important;
+			padding-right: 3.25% !important;
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.hero {
+		.imagePart {
+			left: 47.5%;
+			top: 16px;
+			.webImage {
+				display: none;
+			}
+			.tabletImage {
+				display: block;
+			}
+		}
+	}
+}
+@media (max-width: 700px) {
+	.content {
+		margin-top: 0 !important;
+	}
+	.hero {
+		font-size: 0;
+		text-align: center;
+		margin-top: 5px !important;
+		.textPart {
+			width: 100%;
+			text-align: center;
+			margin: 0 auto 15px;
+			h1 {
+				font-size: 81px;
+				line-height: 60px;
+			}
+			h2 {
+				font-size: 40px;
+			}
+			h3 {
+				font-size: 30px;
+				line-height: 40px;
+			}
+			.equal {
+				font-size: 76px;
+				line-height: 50px;
+			}
+			.border {
+				height: 3px;
+				width: 295px;
+				border-bottom: 1px solid $colorHorLineBorder;
+				margin: 12px auto 5px;
+			}
+			.lowerCosts {
+				font-size: 40px;
+			}
+		}
+		.imagePart {
+			height: 384px;
+			position: relative;
+			display: inline-block;
+			overflow-y: hidden;
+			top: 13px;
+			left: 0;
+			margin: 0 auto;
+			width: 300px;
+			.tabletImage {
+				display: none;
+			}
+			.mobileImage {
+				position: absolute;
+				top: 0;
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.trial {
+		width: 96%;
+		margin-top: 30px;
+		display: inline-block;
+	}
+}
+
+@media (max-width: 479px) {
+	.container {
+		padding: 0 !important;
+	}
+	.hero {
+		&.container {
+			padding: 0 !important;
+		}
+		.textPart {
+			padding: 0;
+		}
+	}
+	.trial {
+		padding: 20px 5px;
+		.getFreeTrial {
+			font-size: 25px;
+			line-height: 28px;
+		}
+		.sign {
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+}	

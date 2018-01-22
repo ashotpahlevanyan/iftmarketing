@@ -1,0 +1,98 @@
+/* Style for Sign In and Sign up ==============
+===============================================*/
+
+.signInUp {
+	@extend %verticalAlignTop;
+	font-size: 0;
+	padding: 8px 0 5px;
+	button {
+		display: inline-block;
+		@extend %fontColor4;
+		@extend %fontOpenSans;
+		@include border-radius(5px);
+		@include linear-gradient($colorSignInUpStart, $colorSignInUpEnd, 1);
+		@include box-shadow(0, 1px, 4px, rgba(0, 0, 0, 0.298), 1);
+		@extend %verticalAlignMiddle;
+		font-weight: 600;
+		padding: 13px 10px;
+		width: 125px;
+		font-size: 17px;
+		line-height: 20px;
+		border: 1px solid $colorSignInUpStart;
+		&:hover {
+			@include linear-gradient($colorSignInUpEnd, $colorSignInUpStart, 1);
+			@include border-radius(5px);
+		}
+		&.signUp {
+			background: $colorSignInUpStart;
+			@include border-radius(5px);
+		}
+		&.signIn {
+			background-image: none !important;
+			@extend %bgColorTransparent;
+			box-shadow: none;
+			//@include linear-gradient($colorWhite, $colorWhite, 1);
+			margin-right: 16px;
+			@extend %fontColor3;
+			&:hover {
+				@extend %fontColor4;
+				@include border-radius(5px);
+				@include linear-gradient($colorSignInUpStart, $colorSignInUpEnd, 1);
+			}
+		}
+	}
+}
+.navBar {
+	.signInUp {
+		display: none;
+	}
+}
+
+@media (max-width: 1000px) {
+	.signInUp {
+		float: none !important;
+		position: absolute;
+		right: 114px;
+		z-index: 20;
+		button {
+			&.signIn {
+				margin-right: 28px;
+			}
+		}
+	}
+}
+@media (max-width: 700px) {
+	.signInUp {
+		padding: 0;
+		right: 65px;
+		top: 12px;
+		button {
+			width: auto;
+			padding: 8px 15px;
+			&.signIn {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 479px) {
+	.signInUp {
+		display: none;
+	}
+	.navBar {
+		.signInUp {
+			background-color: $colorWhite;
+			position: static;
+			display: block;
+			width: 100%;
+			padding: 10px 0;
+			text-align: center;
+			button {
+				display: block;
+				width: 80%;
+				margin: 10px auto; 
+			}
+		}
+	}
+}

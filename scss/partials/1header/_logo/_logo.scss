@@ -1,0 +1,66 @@
+/* Style for logo=====================
+======================================*/
+
+.logo {
+	display: block;
+	margin-top: 1px;
+	padding: 11px 10px 8px 0px;
+	@extend %cursorPointer;
+	img {
+		display: block;
+		width: auto;
+		height: 40px;
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+/*.logoText {
+	display: inline-block;
+	@extend %verticalAlignTop;
+	@extend %fontColor1;
+	@extend %fontStrong;
+	background: url(../images/logoNormal.png) 0 0 no-repeat;
+	padding: 12px 10px 8px 67px;
+	width: 220px;
+	height: 60px;
+	font-size: 18px;
+	line-height: 20px;
+	&:hover {
+		@extend %fontColor3;
+		background: url(../images/logoActive.png) 0 0 no-repeat;
+		@extend %textDecorNone;
+	}
+}*/
+
+
+@media (max-width: 1000px) {
+	.logo {
+		position: absolute;
+		top: 11px;
+		left: 15px;
+		margin-top: 0;
+		z-index: 20;
+	}
+	
+	/*.logoText {
+		position: absolute;
+		top: 10px;
+		left: 15px;
+		z-index: 20;
+	}*/
+}
+
+@media (max-width: 700px) {
+	.logo {
+		top: 0;
+	}
+}
+
+
+@media (max-width: 479px) {
+	.logo {
+		left: 15px;
+	}
+}

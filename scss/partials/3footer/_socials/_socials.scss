@@ -1,0 +1,56 @@
+/* Style for social buttons and UpToTop Button======
+====================================================*/
+
+.socialsUpToTop {
+	padding: 0 0 10px;
+	.socials li a, .upToTop {
+		font-size: 20px;
+		display: block;
+		padding: 10px;
+		width: 42px;
+		height: 42px;
+		@extend %textAlignCenter;
+		@extend %fontColor5;
+		&:hover, &:focus {
+			@extend %textDecorNone;
+			@extend %bgColor5;
+			@extend %fontColor4; 
+			opacity: 1;
+		}
+		&:visited {
+			@extend %textDecorNone;
+		}
+	}
+	.socials {
+		margin-right: 40px;
+		li {
+			display: inline-block;
+			a {
+				@extend %fontAwesome;
+			}
+		}	
+	}
+}
+
+
+@media (max-width: 700px) {
+	.socialsUpToTop {
+		float: none !important;
+		padding-top: 18px;
+		width: 60%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		.socials {
+			//float: left !important;
+			margin-right: 0px;
+		}
+		.upToTop {
+			//float: right !important;
+		}
+	}
+}
+
+@media (max-width: 479px) {
+
+}

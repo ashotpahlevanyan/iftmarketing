@@ -1,0 +1,109 @@
+/* Style for footer navbar ====================
+===============================================*/
+
+.home, .featureFoot {
+	padding-top: 23px;
+	padding-bottom: 20px;
+	display: block;
+	width: 100%;
+}
+
+.home {
+	@extend %bgColor2;
+}
+.featureFoot {
+	@extend %bgColor4;
+
+}
+
+.footerContainer {
+	.copyright {
+		@extend %fontColor4;
+		display: block;
+		width: 100%;
+		font-size: 11px;
+		line-height: 24px;
+		//padding: 11px 0;
+	}
+}
+
+.footerNavbar {
+	margin-right: 30px;
+}
+
+.footerNavbar, .privacy {
+	display: inline-block;
+	font-size: 0;
+	li {
+		display: inline-block;
+		a {
+			@extend %fontColor4;
+			font-size: 11px;
+			line-height: 24px;
+			padding: 5px 6px 5px 0px;
+			&:hover {
+				@extend %textDecorUnderline;
+			}
+		}
+		span {
+			@extend %fontColor4;
+			font-size: 11px;
+			line-height: 24px;
+			margin-right: 6px;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.footerContainer {
+		.copyright {
+			width: 77%;
+			font-size: 14px;
+			line-height: 20px;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+	.footerNavbar, .privacy {
+		display: block;
+		text-align: center;
+	}
+	.footerNavbar {
+		li {
+			margin-top: 10px;
+			a {
+				padding-right: 8px;
+				font-size: 16px;
+				line-height: 42px;
+			}
+			span {
+				font-size: 16px;
+				line-height: 42px;
+				margin-right: 8px;
+			}
+		}
+	}
+	.privacy {
+		li {
+			a {
+				padding-right: 8px;
+				font-size: 14px;
+				line-height: 20px;
+			}
+			span {
+				margin-right: 8px;
+				line-height: 20px;
+				font-size: 14px;
+			}
+		}
+	}
+	.footerNavbar {
+		margin: 0 0 15px;
+	}
+	.footerNav {
+		float: none !important;
+	}
+	.home {
+		padding-top: 15px;
+	}
+}

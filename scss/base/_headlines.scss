@@ -1,0 +1,64 @@
+/*
+
+	headlines.scss
+	* CSS Headlines style
+
+*/
+
+$colorWhite: #fff;
+/* headline for content */
+h1 {
+	font-family: 'Open Sans', helvetica,arial,"lucida grande",verdana;
+	font-size: 101px;
+	font-size: 10.1rem;
+	line-height: 105px;
+	color: $colorWhite;
+}
+
+/* headline for  Recent Posts, Recent News */
+h2 {
+	font-family: 'Open Sans', helvetica,arial,"lucida grande",verdana;
+	font-size: 59px;
+	font-size: 5.9rem;
+	line-height: 72px;
+	font-weight: 300;
+	color: $colorWhite;
+}
+
+/* headlines for article headings in Recent Posts, Recent News */
+h3 {
+	@extend %fontStrong;
+	font-family: 'Open Sans', helvetica,arial,"lucida grande",verdana;
+	font-size: 37px;
+	font-size: 3.7rem;
+	line-height: 42px;
+	color: $colorWhite;
+}
+
+/* headlines for  "I am a new customer"*/
+h4 {
+	font-family: 'Open Sans', helvetica,arial,"lucida grande",verdana;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 30px;
+	font-size: 2.4rem;
+}
+
+/* headlines for  Date Added, Displaying Items 1 to N (...)*/
+h5 {
+	font-family: 'Open Sans', helvetica,arial,"lucida grande",verdana;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 24px;
+	font-size: 1.7rem;
+}
+
+
+/* headlines for  */
+h6 {
+	font-family: 'Open Sans', helvetica,arial,"lucida grande",verdana;
+	@extend %fontStrong;
+	font-size: 8px;
+	font-size: 0.8rem;
+	line-height: 10px;
+}

@@ -1,0 +1,112 @@
+/*Style for homepage =========================
+==============================================*/
+
+.homePage {
+	background: url(../images/bgHome.jpg) 50% -90px no-repeat;
+	//background-size: cover;
+}
+.featuresPage {
+	background: url(../images/bgFeatures.jpg) 50% -440px no-repeat;
+	background-size-width: 100%;
+	background-size-height: auto;
+}
+
+.contactPage {
+	background: url(../images/bgContact.jpg) 50% -130px no-repeat;
+	background-size-width: 100%;
+	background-size-height: auto;
+	//background-size: cover;
+}
+
+.pricingPage {
+	background: url(../images/bgPricing.jpg) 0 -160px no-repeat; //-250px -200px
+	background-size-width: 100%;
+	background-size-height: auto;
+	//background-size: cover;
+	&.upgrade {
+		background-position: 0 -300px;
+	}
+}
+
+.privacyPage {
+	background: none;
+}
+
+.featuresPage, .contactPage, .pricingPage, .privacyPage {
+	.featuresWrapper {
+		@include box-shadow(0, -15px, 15px, rgba(0, 0, 0, 0.12),1);
+	}
+	.footerContainer {
+		.copyright {
+			@extend %fontColor12;
+			opacity: 1;
+		}
+	}
+	.footerNavbar, .privacy {
+		li {
+			a {
+				@extend %fontColor12;
+				opacity: 1;
+				&:hover {
+					@extend %fontColor3;
+				}
+			}
+			span {
+				@extend %fontColor12;
+				opacity: 1;
+			}
+		}
+	}
+	.socialsUpToTop {
+		.socials li a, .upToTop {
+			@extend %fontColor12;
+			@extend %bgColor4;
+			&:hover, &:focus {
+				@extend %textDecorNone;
+				@extend %bgColor3; 
+				@extend %fontColor4;
+			}
+			&:visited {
+				@extend %textDecorNone;
+			}
+		}
+	}
+}
+
+.call {
+	display: block;
+	@extend %textAlignCenter;
+	@extend %fontColor1;
+	@extend %fontSize17h24;
+	padding: 18px 15px 5px !important;
+}
+.phoneNumber {
+	@extend %fontColor3;
+	@extend %fontSize17h24;
+	font-weight: 600;
+}
+
+@media (max-width: 700px) {
+	.featuresPage {
+		background-position: 50% -610px;
+	}
+	.contactPage {
+		background-position: 50% -180px;
+	}
+	.pricingPage {
+		background-position: -120px -400px;
+	}
+}
+
+@media (max-width: 479px) {
+	.featuresPage, .contactPage, .pricingPage {
+		.hero {
+			.textPart {
+				min-width: 280px;
+				h2 {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

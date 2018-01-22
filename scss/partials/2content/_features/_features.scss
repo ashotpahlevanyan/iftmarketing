@@ -1,0 +1,93 @@
+/* Style for Features =======================
+=============================================*/
+.featuresWrapper {
+	@extend %bgColor2;
+	padding-top: 62px;
+	padding-bottom: 15px;
+	display: block;
+	width: 100%;
+}
+.features {
+	.feature {
+		@extend %fontColor4;
+		@extend %textAlignCenter;
+		@extend %verticalAlignTop;
+		display: inline-block;
+		padding: 10px 6px;
+		width: 33%;
+		margin-bottom: 20px;
+		h4 {
+			font-weight: 400;
+			margin-top: 25px;
+		} 
+		p {
+			@extend %textAlignLeft;
+			@extend %fontSize17h24;
+			margin-top: 24px;
+		}
+		.view {
+			@extend %bgColor2;
+			@extend %fontStrong;
+			font-size: 17px;
+			border: 2px solid $colorWhite;
+			@include border-radius(4px);
+			padding: 8px 30px;
+			height: 48px;
+			margin-top: 30px;
+			&:hover {
+				@extend %bgColor4;
+				@extend %fontColor8;
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.featuresWrapper {
+		position: relative;
+		z-index: 10;
+	}
+}
+
+@media (max-width: 700px) {
+	.featuresWrapper {
+		padding-top: 40px;
+		padding-bottom: 0;
+	}
+	.features {
+		padding-top: 15px !important;
+		display: block;
+		text-align: center;
+
+		.feature {
+			width: 67.154%;
+			min-width: 280px;
+			//max-width: 330px;
+			display: inline-block;
+			margin-bottom: 40px;
+			h4 {
+				margin-top: 22px;
+			}
+			p {
+				margin-top: 6px;
+				text-align: center;
+			}
+			.view {
+				width: 77%;
+				margin-top: 20px;
+			}
+			
+		}
+	}
+}
+
+@media (max-width: 479px) {
+	.features {
+		.feature {
+			width: 86.1538%;
+			min-width: 280px;
+			
+		}
+	}
+}
+

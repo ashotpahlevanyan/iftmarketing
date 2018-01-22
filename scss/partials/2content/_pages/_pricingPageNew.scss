@@ -1,0 +1,129 @@
+/*Style for Pricing Page New ========================
+=================================================*/
+
+.pricingPage.new {
+	.pricings {
+		.footInfo {
+			display: inline-block;
+			font-size: 12px;
+			@extend %fontColor13;
+			width: 80%;
+			margin-top: 9px;
+			margin-bottom: 10px;
+		}
+		.item {
+			@include box-shadow(0px, 6px, 16px, #ccc, 1);
+			width: 40%; // 31.42%;//330px
+			padding-bottom: 22px;
+			padding-top: 25px;
+			margin-top: 47px;
+			border: none;
+			.heading {
+			}
+			.type {
+				margin-top: 11px;
+				margin-bottom: 24px;
+			}
+			.signUp {
+				@extend %fontStrong;
+				width: 215px;
+				padding: 11px 10px 12px;
+				margin-bottom: 8px;
+				font-size: 17px;
+				&:hover {
+					@extend %textDecorNone;
+					@extend %fontColor4;
+					cursor: pointer;
+				}
+				&:focus, &:visited {
+					@extend %textDecorNone;
+					@extend %fontColor4;
+				}
+			}
+			&.pro {
+				@extend %positionRelative;
+				//width: 37.16%;//390px;
+				padding-top: 0;
+				//margin-bottom: 20px;
+				z-index: 10;
+				margin-top: 0;
+				margin-right: 3%;
+				//padding-bottom: 40px;
+				.type {
+					margin-top: 36px;
+
+				}
+			}
+			&.enterprise {
+				//padding-bottom: 22px;
+			}
+			&.free {
+				margin-top: 21px;
+				width: 83%;
+				.type {
+					margin-bottom: 9px;
+				}
+				.period {
+					width: 65%;
+					margin-bottom: 27px;
+				}
+				.signUp {
+					@extend %bgColorTransparent;
+					background-image: none !important;
+					color: $colorLinks;
+					box-shadow: none;
+					&:hover {
+						@extend %fontColor4;
+						@include border-radius(5px);
+						@include linear-gradient($colorSignInUpStart, $colorSignInUpEnd, 1);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.pricingPage.new {
+		.pricings {
+			margin-bottom: 120px;
+			.item {
+				width: 75%;
+				.type { 
+					font-size: 24px;
+					line-height: 1em;
+				}
+				.price {
+					font-size: 99px;
+					font-weight: 200;
+					span {
+						font-size: 25px;
+					}
+				}
+				.heading {
+					margin-top: 20px;
+					display: inline-block;
+					width: 50%;
+					@include border-radius(5px);
+				}
+				&.pro {
+					@include box-shadow(0px, 0px, 16px, #ccc, 1);
+					width: 100%;
+					margin-bottom: 0;
+				}
+				&.enterprise, &.free {
+					margin-top: 0;
+				}
+				.signUp, &.free .signUp {
+					width: 80%;
+				}
+				&.free {
+					width: 100%;
+					.period {
+						width: 90%;
+					}
+				}
+			}
+		}
+	}
+}
